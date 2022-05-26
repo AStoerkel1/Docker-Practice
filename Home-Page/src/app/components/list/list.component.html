@@ -1,1 +1,3 @@
-<p>list works!</p>
+<div *ngFor="let item of contentList" #list>
+    <app-list-item [link]="item.link" [content]="item.content"></app-list-item>
+</div>
