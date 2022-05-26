@@ -1,2 +1,2 @@
-# Docker-Practice
-This is a repository for a small project for learning the basics of docker.
+# Home Page I'm building for myself
+small project for a home page
