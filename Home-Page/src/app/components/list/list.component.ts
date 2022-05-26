@@ -1,23 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit {
+export class ListComponent {
 
   contentList: any[] = [
    {
-     link: "https://www.youtube.com", content: "YouTube"
+     links: ["https://www.github.com", "https://securityinjections.slack.com/ssb/redirect"], content: "Work"
    },{
-     link: "https://www.reddit.com", content: "Reddit"
+     links: ["https://www.reddit.com", "https://youtube.com"], content: "Play"
    }
   ]
-  listCount: number = 0;
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

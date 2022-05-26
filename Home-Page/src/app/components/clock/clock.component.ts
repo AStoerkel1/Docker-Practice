@@ -1,5 +1,5 @@
-import { Component, ElementRef, NgZone, Renderer2, ViewChild } from '@angular/core';
-import { DatePipe } from '@angular/common';
+import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-clock',
   templateUrl: './clock.component.html',
@@ -8,8 +8,6 @@ import { DatePipe } from '@angular/common';
 export class ClockComponent {
   
   now: number = Date.now();
-  @ViewChild('clock')
-  public element: ElementRef = new ElementRef('p');
 
   constructor() { 
     setInterval(()=>{

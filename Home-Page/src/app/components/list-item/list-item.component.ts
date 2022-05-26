@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ɵɵresolveWindow } from '@angular/core';
 
 @Component({
   selector: 'app-list-item',
@@ -8,8 +8,17 @@ import { Component, Input } from '@angular/core';
 export class ListItemComponent {
 
   @Input() content: string = '';
-  @Input() link: string = '';
-
+  @Input() linkList: string[] = [];
   constructor() { }
 
+/**
+ * opens all links passed in links array
+ * 
+ * @param links list of links to open in new windows
+ */
+  openLinks(links: string[] = this.linkList) {
+    links.forEach((link: string)=>{
+      window.open(link, "_blank");
+    });
+  }
 }

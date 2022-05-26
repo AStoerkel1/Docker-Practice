@@ -4,17 +4,17 @@ body {
     text-align: center;
     margin-top: 1em;
     font-size: 3em;
-    color: rgb(152,151,54);
+    color: #8EC07C;
     background-color: rgb(40,40,40);
     
     app-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 1em;
-        a {
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
             color: #8EC07C;
             text-decoration: none;
+            cursor: pointer;
         }
     }
     
