@@ -16,8 +16,8 @@ export class ListItemComponent {
  * 
  * @param links list of links to open in new windows
  */
-  openLinks(links: string[] = this.linkList) {
-    links.forEach((link: string)=>{
+  openLinks() {
+    this.linkList.forEach((link: string)=>{
       window.open(link, "_blank");
     });
   }
